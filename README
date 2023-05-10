@@ -1,0 +1,18 @@
+Few issues which I would like to describe:
+
+- Models structure pretty much depends on idea of project, for example if there have to be any type of flower lists, obviously models_extra come in handy, only for trades my choice is original models.
+
+- Hidden offers should be handle in viewsets/API views etc., just Offer.objects.filter(hidden=False), so it's not work of models.
+
+- Handling of proper permissions shouldn't be in models, so check it in some permissions file.
+
+- What about fifth item, is user.trades enough? Get it in API and format in frontend
+
+Okay, quick overview:
+
+1. Roles added
+2. Required models created
+3. Field for managing it added, but mostly work of API
+4. Required models created
+5. user.trades, voila! format it in frontend then
+6. To get list of type [seller, [all, his, sales], total_profit], just call User.make_list() (classmethod)
