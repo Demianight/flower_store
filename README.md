@@ -1,6 +1,6 @@
 # This task was recieved as a test case for an interview
 
-# Simple Django models for fantom flower store
+## Simple Django models for fantom flower store
 
 Models describe:
 - flower
