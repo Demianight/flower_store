@@ -1,18 +1,10 @@
-Few issues which I would like to describe:
+# This task was recieved as a test case for an interview
 
-- Models structure pretty much depends on idea of project, for example if there have to be any type of flower lists, obviously models_extra.py come in handy. But while we have only trades my choice is original models.py.
+# Simple Django models for fantom flower store
 
-- Hidden offers should be handle in viewsets/API views etc., just Offer.objects.filter(hidden=False), so it's not work of models.
+Models describe:
+- flower
+- seller's offer
+- trade between seller and some user
 
-- Handling of proper permissions shouldn't be in models, so check it in API.
-
-- What about fifth item, is user.trades.all() enough? Get it in API and format in frontend to get access to all user's trades
-
-Okay, quick overview:
-
-1. Roles added
-2. Required models created
-3. Field for managing hidden offers added, but mostly work of API
-4. Required models created
-5. user.trades.all(), voila! format it in frontend then
-6. To get list of type [[seller, [all, his, sales], total_profit], [other_user, ...]], just call User.make_list() (classmethod)
+### I spent around 2 hours for thinking and actual coding, so maybe it's not the best choice for your's flower store))
